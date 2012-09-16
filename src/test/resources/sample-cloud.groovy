@@ -18,7 +18,7 @@ cloud {
 		
 		cloudifyUrl "http://repository.cloudifysource.org/org/cloudifysource/2.1.1/gigaspaces-cloudify-2.1.1-ga-b1400.zip" 
 		// create a archive with the driver in folder lib/plateform/esm
-		//cloudifyOverridesUrl "https://s3.amazonaws.com/MYBUCKET/gigaspaces_overrides.zip"		
+		//cloudifyOverridesUrl "https://github.com/downloads/fastconnect/cloudify-openstack-driver/gigaspaces_overrides.zip"		
 
 		// warning: '.' is not allowed
 		machineNamePrefix "cloudify-agent-"
