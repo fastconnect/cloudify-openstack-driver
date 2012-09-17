@@ -5,7 +5,7 @@
 	<version>1.1</version>
 
 	<scm>
-		<connection>scm:git:git://github.com/fastconnect/cloudify-openstack-driver.git</connection>
+		<connection>scm:git:git@github.com:fastconnect/cloudify-openstack-driver.git</connection>
 	</scm>
 
 	<properties>
