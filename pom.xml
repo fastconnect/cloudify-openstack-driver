@@ -5,6 +5,10 @@
 	<artifactId>cloudify-openstack-driver</artifactId>
 	<version>1.1-SNAPSHOT</version>
 
+	<scm>
+		<connection>scm:git:git://github.com/fastconnect/cloudify-openstack-driver.git</connection>
+	</scm>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -62,7 +66,5 @@
 			</plugin>
 		</plugins>
 	</build>
-	<scm>
-		<url>scm:git:git://github.com/fastconnect/cloudify-openstack-driver.git</url>
-	</scm>
+
 </project>
