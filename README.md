@@ -5,7 +5,7 @@ To avoid conflicts, I use a new package: org.cloudifysource.esc.driver.provision
 This driver works with ESSEX version of OpenStack, but it's also compatible with older versions.
 It has a better configuration:
 
-'''
+```groovy
 custom ([	
 		"openstack.identity.endpoint": "http://ENDPOINT:5000/",
 		"openstack.tenantName" : "TENANTNAME",
@@ -16,9 +16,9 @@ custom ([
 		"openstack.wireLog": "false"
 
 	])
-'''
+```
 
-You can find a full example of the configuration in src/test/resources
+You can find a full example of the configuration in src/test/resources (https://github.com/fastconnect/cloudify-openstack-driver/blob/master/src/test/resources/sample-cloud.groovy)
 
 This driver also create a Floting IP automatically, and release it automatically.
 It does that because OpenStack don't create automatically a Public IP as in EC2, so we have to do it thanks to Floating IP.
@@ -27,7 +27,7 @@ You can download the driver from our Nexus, and package it in a gigaspaces_overr
 The use of gigaspaces_overrides is explained here: http://www.cloudifysource.org/guide/2.1/clouddrivers/tutorial_maven (Packing and Adding to Cloudify)
 
 Here is the POM configuration to include the driver:
-'''
+```xml
 <repositories>
 	<repository>
 		<id>repo.opensource.fastconnect.org</id>
@@ -52,6 +52,6 @@ Here is the POM configuration to include the driver:
 		</exclusions>
 	</dependency>
 </dependencies>
-'''
+```
 
 Here is the full URL: https://opensource.fastconnect.org/maven/content/repositories/opensource/org/cloudifysource/cloudify-openstack-driver/1.1/cloudify-openstack-driver-1.1.jar
