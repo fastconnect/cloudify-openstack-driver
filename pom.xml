@@ -22,7 +22,7 @@
 	<distributionManagement>
 		<repository>
 			<id>repo.opensource.fastconnect.org</id>
-			<url>https://opensource.fastconnect.org/maven/content/repositories/opensource</url>
+			<url>http://opensource.fastconnect.org/maven/content/repositories/opensource</url>
 		</repository>
 	</distributionManagement>
 
