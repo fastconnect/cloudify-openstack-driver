@@ -131,8 +131,8 @@ public class OpenstackCloudDriver extends CloudDriverSupport implements Provisio
 	}
 
 	@Override
-	public void setConfig(final Cloud cloud, final String templateName, final boolean management) {
-		super.setConfig(cloud, templateName, management);
+	public void setConfig(final Cloud cloud, final String templateName, final boolean management, String serviceName) {
+		super.setConfig(cloud, templateName, management, serviceName);
 
 		if (this.management) {
 			this.serverNamePrefix = this.cloud.getProvider().getManagementGroup();
@@ -167,7 +167,7 @@ public class OpenstackCloudDriver extends CloudDriverSupport implements Provisio
 	}
 
 	@Override
-	public MachineDetails startMachine(final long duration, final TimeUnit unit)
+	public MachineDetails startMachine(String locationId, final long duration, final TimeUnit unit)
 			throws TimeoutException, CloudProvisioningException {
 		
 		if (isThrottling()) {
