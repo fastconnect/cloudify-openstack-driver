@@ -39,7 +39,7 @@ Here is the POM configuration to include the driver:
 	<dependency>
 		<groupId>org.cloudifysource</groupId>
 		<artifactId>cloudify-openstack-driver</artifactId>
-		<version>1.1</version>
+		<version>1.2</version>
 		<exclusions>
 			<exclusion>
 				<artifactId>esc</artifactId>
@@ -54,4 +54,4 @@ Here is the POM configuration to include the driver:
 </dependencies>
 ```
 
-Here is the full URL: https://opensource.fastconnect.org/maven/content/repositories/opensource/org/cloudifysource/cloudify-openstack-driver/1.1/cloudify-openstack-driver-1.1.jar
+Here is the full URL: https://opensource.fastconnect.org/maven/content/repositories/opensource/org/cloudifysource/cloudify-openstack-driver/1.2/cloudify-openstack-driver-1.2.jar
