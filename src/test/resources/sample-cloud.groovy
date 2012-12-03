@@ -14,11 +14,10 @@ cloud {
 	provider {
 		// optional 
 		provider "openstack"
-		localDirectory "tools/cli/plugins/esc/sample/upload"
 		
-		cloudifyUrl "http://repository.cloudifysource.org/org/cloudifysource/2.1.1/gigaspaces-cloudify-2.1.1-ga-b1400.zip" 
+		cloudifyUrl "http://repository.cloudifysource.org/org/cloudifysource/2.2.0-RELEASE/gigaspaces-cloudify-2.2.0-ga-b2500" 
 		// create a archive with the driver in folder lib/plateform/esm
-		//cloudifyOverridesUrl "https://github.com/downloads/fastconnect/cloudify-openstack-driver/gigaspaces_overrides.zip"		
+		//cloudifyOverridesUrl "https://github.com/downloads/fastconnect/cloudify-openstack-driver/gigaspaces_overrides"		
 
 		// warning: '.' is not allowed
 		machineNamePrefix "cloudify-agent-"
@@ -37,8 +36,7 @@ cloud {
 	}
 	user {
 		user "LOGIN"
-		apiKey "PASSWORD"
-		keyFile "KEYPAIR.pem"
+		apiKey "PASSWORD"		
 	}
 	templates ([
 				MEDIUM_LINUX : template{
@@ -48,11 +46,17 @@ cloud {
 					// use "nova flavor-list" to find the id of the hardware
 					hardwareId "RegionOne/3"
 					remoteDirectory "/root/"
+					
+					localDirectory "upload"
+					
+					username="USERNAME"
 										
 					options ([
 						"openstack.securityGroup" : "default",
 						"openstack.keyPair" : "KEYPAIR_NAME"
 					])
+					
+					//privileged true
 					
 				}
 			])
