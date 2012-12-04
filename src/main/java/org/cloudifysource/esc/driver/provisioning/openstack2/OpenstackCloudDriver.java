@@ -579,7 +579,7 @@ public class OpenstackCloudDriver extends CloudDriverSupport implements Provisio
 			md.setCloudifyInstalled(false);
 			md.setInstallationDirectory(serverTemplate.getRemoteDirectory());
 
-			md.setRemoteUsername("root");
+			md.setRemoteUsername(serverTemplate.getUsername());
 
 			return md;
 		} catch (final Exception e) {
